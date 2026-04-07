@@ -32,7 +32,12 @@ MEMORY_STORE_DIR.mkdir(parents=True, exist_ok=True)
 # ── Qdrant (RAG, Docker Container) ───────────────────────────────────────────
 QDRANT_HOST       = os.getenv("QDRANT_HOST", "localhost")
 QDRANT_PORT       = int(os.getenv("QDRANT_PORT", "6333"))
-QDRANT_COLLECTION = os.getenv("QDRANT_COLLECTION", "battery_docs")
+QDRANT_COLLECTION = os.getenv("QDRANT_COLLECTION", "battery_research")
+
+# ── Embedding 모델 (Qwen3-Embedding-0.6B, 로컬 실행) ─────────────────────────
+EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL_NAME", "Qwen/Qwen3-Embedding-0.6B")
+EMBEDDING_VECTOR_DIM = 1024
+EMBEDDING_BATCH_SIZE = 32
 
 # ── 검색 설정 ─────────────────────────────────────────────────────────────────
 WEB_SEARCH_MAX_RESULTS = 5   # 웹 검색 결과 최대 건수
