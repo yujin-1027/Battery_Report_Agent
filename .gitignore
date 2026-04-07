@@ -1,2 +1,6 @@
 .env
 .env_example
+qdrant_data/
+data/*.pdf
+__pycache__/
+.venv/

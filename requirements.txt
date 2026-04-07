@@ -10,6 +10,12 @@ qdrant-client>=1.9.0
 
 # LLM 및 임베딩
 openai>=1.30.0
+sentence-transformers>=3.0.0
+torch>=2.0.0
+
+# PDF 처리
+pypdf>=4.0.0
+langchain-text-splitters>=0.3.0
 
 # 유틸리티
 python-dotenv>=1.0.0
